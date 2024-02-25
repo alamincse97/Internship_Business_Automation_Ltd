@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Nominee Information</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="wrap">
-            <h3>Nominee Information</h3>
-            <a href="#" class="add">&plus;</a>
-        </div>
-        <div class="inp-group">
-
-        </div>
+    <div class="tab">
+        <p>
+            Nominee Information
+        </p>
+        <table id="tb">
+            <thead>
+                <tr>
+                    <th>Name of Nominee</th>
+                    <th>Relation with Nominee</th>
+                    <th>Nominee NID/Birth Certificate</th>
+                    <th>Nominee's Mobile Number</th>
+                    <th id="thl"></th>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td id="bt"><button> + </button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
