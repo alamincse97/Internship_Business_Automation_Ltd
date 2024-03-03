@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<!-- {% block title %}Store Book{% endblock %} -->
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+<!-- <style>
+    /* CSS for adjusting the font size of the <h1> tag */
+    h1 {
+        font-size: 24px; /* You can adjust the font size as needed */
+    }
+</style> -->
+
+<div style="width:50%;margin:auto;">
+    <h1>Welcome to Product Management System</h1>
+    <form method="POST"> 
+        {% csrf_token %} <!-- for security -->
+    {{form|crispy}}
+    <button class="btn btn-primary" type="submit">Submit</button>
+ </form>
+</div>
+
+{%endblock%}
