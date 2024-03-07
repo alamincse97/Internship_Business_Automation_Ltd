@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+{% if user_list %}
+    <table id="table" class="table table-bordered table-striped">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </thead>
+        <tbody>
+        {% for user in user_list %}
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.phone}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No user record available</p>
+{% endif %}
+{% endblock %}
